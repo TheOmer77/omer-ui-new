@@ -1,0 +1,21 @@
+---
+title: The component
+---
+
+import { Button } from '@theomer77/omer-ui-components';
+
+This is the Button component:
+
+<div style={{ display: 'flex', flexDirection: 'row', gap: '0.5rem' }}>
+  {[...Array(5).keys()].map(key => (
+    <Button key={key}>{`Button${key}`}</Button>
+  ))}
+</div>
+
+## Usage
+
+```tsx
+import { Button } from '@theomer77/omer-ui-components';
+
+<Button>Label</Button>;
+```
