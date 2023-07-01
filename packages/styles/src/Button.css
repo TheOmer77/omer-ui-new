@@ -1,0 +1,23 @@
+.button-wow {
+  outline: none;
+  border: none;
+  background-color: hsl(224, 85%, 55%);
+  color: #fff;
+  padding: 0 0.875rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 0.875rem;
+  cursor: default;
+  user-select: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: hsl(224, 85%, 65%);
+  }
+
+  &:active {
+    background-color: hsl(224, 85%, 45%);
+  }
+}
