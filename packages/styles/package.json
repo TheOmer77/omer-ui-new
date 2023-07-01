@@ -1,0 +1,11 @@
+{
+  "name": "@theomer77/omer-ui-styles",
+  "description": "Omer UI Styles",
+  "version": "1.0.0",
+  "author": "TheOmer77",
+  "license": "ISC",
+  "scripts": {
+    "build": "postcss -d . src",
+    "build:watch": "postcss -w -d . src"
+  }
+}

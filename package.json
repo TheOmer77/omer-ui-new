@@ -1,0 +1,48 @@
+{
+  "name": "omer-ui",
+  "version": "1.0.0",
+  "description": "",
+  "author": "TheOmer77",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "docs"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm:dev:*\"",
+    "dev:components": "npm -s -w packages/components run build:watch",
+    "dev:styles": "npm -s -w packages/styles run build:watch",
+    "dev:docs": "npm -s -w docs run dev",
+    "build": "npm -s run build:components && npm -s run build:styles && npm -s run build:docs",
+    "build:components": "npm -s -w packages/components run build",
+    "build:styles": "npm -s -w packages/styles run build",
+    "build:docs": "npm -s -w docs run build",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@esbuild-plugins/tsconfig-paths": "^0.1.2",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.3.3",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "concurrently": "^8.2.0",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "postcss-nested": "^6.0.1",
+    "prettier": "^2.8.8",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6"
+  }
+}

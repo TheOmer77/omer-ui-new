@@ -1,0 +1,24 @@
+{
+  "name": "nextjs-docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^8.0.1",
+    "@theomer77/omer-ui-components": "*",
+    "clsx": "^1.2.1",
+    "contentlayer": "^0.3.4",
+    "next": "13.4.7",
+    "next-contentlayer": "^0.3.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rehype-prism-plus": "^1.6.1",
+    "remark-gfm": "^3.0.1",
+    "sass": "^1.63.6"
+  }
+}
