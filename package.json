@@ -41,6 +41,7 @@
     "postcss": "^8.4.25",
     "postcss-cli": "^10.1.0",
     "postcss-nested": "^6.0.1",
+    "postcss-preset-env": "^9.0.0",
     "prettier": "^3.0.0",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
