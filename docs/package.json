@@ -13,7 +13,7 @@
     "@theomer77/omer-ui-components": "*",
     "clsx": "^1.2.1",
     "contentlayer": "^0.3.4",
-    "next": "13.4.9",
+    "next": "13.4.10",
     "next-contentlayer": "^0.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
