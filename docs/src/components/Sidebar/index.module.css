@@ -7,6 +7,7 @@
   top: 0;
 }
 .list {
+  grid-row-gap: 0.25rem;
   color: var(--color-neutral-600);
   display: grid;
   list-style: none;
@@ -21,6 +22,8 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
 }
 .category summary svg {
@@ -41,21 +44,30 @@
   border-radius: var(--rounded-md);
   box-sizing: border-box;
   color: inherit;
-  cursor: pointer;
+  cursor: default;
   display: flex;
   flex-direction: row;
+  font-size: 0.875rem;
   font-weight: var(--font-weight-medium);
-  height: 2.5rem;
-  padding: 0 0.75rem;
+  height: 2.25rem;
+  padding: 0 1rem;
+  -webkit-text-decoration: none;
   text-decoration: none;
-  transition: var(--transition-bg);
+  transition:
+    background-color 75ms ease-in-out,
+    color 75ms ease-in-out;
   width: 100%;
 }
-.button:hover {
-  background-color: var(--color-neutral-50);
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--color-neutral-50);
+  }
 }
 .button:active {
   background-color: var(--color-neutral-100);
+  transition:
+    background-color 25ms ease-in-out,
+    color 25ms ease-in-out;
 }
 .button.active {
   background-color: var(--color-primary-50);
